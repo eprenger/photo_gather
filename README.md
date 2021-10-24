@@ -4,6 +4,6 @@ This application is going to be one of experimenting using API's moand more Java
 
 The API's I am going to be using are listed below along with any documentation used:
 
-1. Pexels API
+1. Pexels API (https://www.pexels.com/api/documentation/)
 
 Screenshots:
