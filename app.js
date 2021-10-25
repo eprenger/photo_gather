@@ -34,11 +34,11 @@ function generatePhotos(data) {
     const galleryImg = document.createElement("div");
     galleryImg.classList.add("gallery-img");
     galleryImg.innerHTML = `
-    <div class="gallery-info" >
-    <p>${photo.photographer}</p>
-    <a href="${photo.src.original}">Download</a>
-    </div>
     <img src=${photo.src.large}></img>
+    <div class="gallery-info" >
+    <p><a class="photographer-link" href=${photo.photographer_url} target="_blank">${photo.photographer}</a></p>
+    <a href=${photo.src.original}>Download</a>
+    </div>
     `;
     gallery.appendChild(galleryImg);
   });
