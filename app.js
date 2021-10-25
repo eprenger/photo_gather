@@ -65,7 +65,7 @@ async function searchPhotos(query) {
 
 function clearSearch() {
   gallery.innerHTML = "";
-  searchInput.value = ""; //clears input box of search text (not necessary)
+  // searchInput.value = ""; //clears input box of search text (not necessary)
 }
 
 async function loadMore() {
