@@ -33,8 +33,12 @@ function generatePhotos(data) {
   data.photos.forEach((photo) => {
     const galleryImg = document.createElement("div");
     galleryImg.classList.add("gallery-img");
-    galleryImg.innerHTML = `<img src=${photo.src.large}></img>
+    galleryImg.innerHTML = `
+    <div class="gallery-info" >
     <p>${photo.photographer}</p>
+    <a href="${photo.src.original}">Download</a>
+    </div>
+    <img src=${photo.src.large}></img>
     `;
     gallery.appendChild(galleryImg);
   });
@@ -52,6 +56,11 @@ async function searchPhotos(query) {
     `https://api.pexels.com/v1/search/?page=1&per_page=15&query=${query}`
   );
   generatePhotos(data);
+}
+
+function clearSearch() {
+  gallery.innerHTML = "";
+  searchInput.value = ""; //clears input box of search text (not necessary)
 }
 
 curatedPhotos();
