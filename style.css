@@ -17,8 +17,9 @@ header {
 }
 header a {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: #021840;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
 }
 header h2 {
   padding: 2rem;
@@ -108,4 +109,12 @@ header h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav {
+  background: #021840;
+}
+
+.nav:hover {
+  background: #5096c7;
 }
