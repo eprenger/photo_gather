@@ -75,7 +75,8 @@ header h2 {
   object-fit: cover;
 }
 
-.photographer-link {
+.photographer-link,
+.videographer-link {
   text-decoration: none;
 }
 
